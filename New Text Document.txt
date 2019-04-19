@@ -1,0 +1,23 @@
+API_KEY:  AIzaSyDiTpBt76O8-sNRI8EhFcmE7AkBv0jPMIM
+
+npm install react-native-maps --save
+
+react-native link react-native-maps
+
+--------------------------------------
+Android/build.gradle
+
+141: implementation project(':react-native-maps'){
+        exlclude group:'com.google.android.gms'
+    }
+--------------------------------------
+
+-------------------------------------
+android/app/src/AndroidManitest.xml
+	<meta-data
+     	 android:name="com.google.android.geo.API_KEY"
+     	 android:value="AIzaSyDiTpBt76O8-sNRI8EhFcmE7AkBv0jPMIM"
+     	 />
+-----------------------------------------
+Cmaera plugin code react-native
+https://snowball.digital/blog/capturing-pictures-in-react-native
